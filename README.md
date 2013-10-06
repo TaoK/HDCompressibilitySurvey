@@ -49,7 +49,11 @@ tackle any of these anytime soon:
 
 ### License / Third-party Code
 
-I have not yet decided on what license to use for this code; in the meantime, I guess the default applies, i.e. copyright belongs to me.
+I have not yet decided on what license to use for this code; in the meantime, I guess the default
+applies, i.e. copyright belongs to me. Obviously it's my intention that anyone who wants to use it
+does (including compiling, etc), I just haven't decided what restrictions would be appropriate for
+modifications and for redistribution. Obviously if you're interested in doing something with this 
+code (modification/redistribution), please tell me!
 
 I have used a couple of third-party libraries:
 * managed-lzma (MIT license)
@@ -58,3 +62,5 @@ I have used a couple of third-party libraries:
 There is also a number of code snippets that I came across in different places online, to
 solve "known problems" - these need to to be collected and evaluated in case there are any
 licensing consequences.
+
+Copyright Tao Klerks, 2013; tao at klerks point biz
