@@ -31,6 +31,9 @@ namespace HDSurvey
 
         public static IEnumerable<FileInfo> EnumerateFiles(string path, string searchPattern, SearchOption searchOpt)
         {
+            if (path.EndsWith(" "))
+                throw new NotSupportedException(string.Format("Directory '{0}' ends with a space, which is not supported by 'System.IO' classes (and many other parts of Windows). Please rename the directory (eg at the command using the 'rename' command with the 8.3 name; explorer does not allow for this) before attempting to iterate this path.", path));
+
             try
             {
                 var dirFiles = Enumerable.Empty<FileInfo>();
