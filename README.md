@@ -31,6 +31,7 @@ days/weeks/months, although the project has reached a level of usability suffici
 online and using on my different computers, so I'm not sure I will be working up the will to 
 tackle any of these anytime soon:
 
+* Implement wildcard (regex?) extension matching instead of only constant-based matches - for "bad neighbours" that use randomly-generated (but predictable pattern) extensions, eg microsoft updates.
 * Allow for editing the "Known Compressed" file list in the UI, and saving the result back to file
 * Displaying an "Estimated Compression Time" column, and an "Estimated Space Savings" column in
     the UI or export, to make it easier to estimate the cost to benefit ratio of any given
@@ -48,7 +49,7 @@ tackle any of these anytime soon:
 * Perform compression test on files in random order, to help promote meaningful results partway (don't get stuck for 30 minutes testing one extension)
 * For compression test, select files proportionally by size, selecting random stretches of data instead of biasing towards smaller files
 * Support multiple compression algorithms, allow for comparisons
-
+* Implement a more user-friendly change notification/refresh mechanism than rebinding the datagridview; would be nice to maintain selection information as data changes/updates in the UI
 
 ### License / Third-party Code
 

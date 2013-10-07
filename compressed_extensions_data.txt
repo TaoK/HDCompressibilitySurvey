@@ -39,15 +39,19 @@
 .aa3 #ATRAC Audio File
 .aac #Advanced Audio Coding File
 .aif #Audio Interchange File Format
+.ape #Monkey's Audio File
 .file #Spotify temp/local cache media file
+.flac #FLAC (Free Lossless Audio Codec) Audio File
 .gsm #Full Rate GSM speech coding audio file
 .iff #Interchange File Format
 .m4a #MPEG-4 Audio File
 .mp3 #MP3 Audio File
 .mpa #MPEG-2 Audio File
+.mpc #Musepack (MPEGplus) Audio File
 .ra #Real Audio File
 .ogg #a free, open source container format
 .wma #the popular Windows Media Audio format
+.wv #WavPack Audio File
 
 
 # Compressed media files (video)
@@ -80,22 +84,24 @@
 
 
 # Compressed image files
+.emz #Windows Compressed Enhanced Metafile
 .gif #Graphical Interchange Format File
 .j2c #JPEG 2000 Image
 .jpeg #JPEG Image
 .jpg #JPEG Image
+.pamp #PowerAmp Image Cache
 .pdn #Paint.NET Image
 .png #Portable Network Graphic
 .pspimage #PaintShopPro Image
 .tif #TIFF image
 
 
-# Font files
+# Compressed Font files
 .eot #Embedded OpenType
 .woff #Web Open Font Format
 
 
-# Game files
+# Compressed Game files
 .bik #Valve/Steam Game Video File
 .mpq #Blizzard Mo'PaQ File
 
@@ -124,13 +130,14 @@
 .pptm #Microsoft PowerPoint Presentation (macros enabled)
 .stw #OpenOffice.org Text Document Template	
 .trf #DocuMagix PaperMaster File (legacy)
+.webarchive #Apple Safari Web Page Archive
 .xlsx #Microsoft Excel Worksheet	
 .xlsm #Microsoft Excel Worksheet (macros enabled)
 .xlsb #Microsoft Excel Worksheet (binary)
 .xps #Open XML Paper Specification Document
 
 
-# Programming
+# Compressed Source Control or Development Files
 .d #Mercurial data file
 .dess #Microsoft DeviceEmulator Saved State File
 .i #Mercurial index file
@@ -140,13 +147,13 @@
 .swz #Adobe Flex Signed RSL file
 
 
-# Encrypted
+# Encrypted Files
 .gpg #GnuPG Encrypted file
 .kdbx #KeePass Password Database
 .tc #TrueCrypt Encrypted Volume
 
 
-# Other
+# Other Compressed or High-Entropy Files
 .apk #Android Application Package
 .eftx #Microsoft Office Theme Effects
 .sdg #OpenOffice.org Configuration File	
