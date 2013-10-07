@@ -13,14 +13,14 @@ of Duplicati, an open-source .Net backup system).
 ### Methodology
 
 * Find all files in a target path, recursively iterating through directories/folders
-** While iterating through the folders, collect filenames and sizes, collecting/aggregating by extension
+    * While iterating through the folders, collect filenames and sizes, collecting/aggregating by extension
 * For each extension (except those known compressed ones, if they are to be skipped):
-** Determine how many files to test compression on - 10%, or up to 100 files if that number is less (even if that is all files found)
-** Pick that number of files randomly from those found earlier
-** For each file, compress up to 1MB of data using LZMA2 compression (default settings of the "managed-lzma" library), and determine how many bytes of data the compressed result is.
-** Store the compresion ratio and average for the extension
+    * Determine how many files to test compression on - 10%, or up to 100 files if that number is less (even if that is all files found)
+    * Pick that number of files randomly from those found earlier
+    * For each file, compress up to 1MB of data using LZMA2 compression (default settings of the "managed-lzma" library), and determine how many bytes of data the compressed result is.
+    * Store the compresion ratio and average for the extension
 * During the process, update/display the status in the UI every once in a while
-** Allowing exploration of sampled files
+    * Allowing exploration of sampled files
 * When done, allow export of accumulated data into an excel workbook
 
 
@@ -45,6 +45,9 @@ tackle any of these anytime soon:
     during the data collection process, for visual clarity / to avoid confusion.
 * Allowing for editing the "target percent of files" for compressibility testing - currently fixed at 10%
 * Add some sort of "submit to the mothership" functionality so that people could contribute their local stats and we could build up a "fair" picture across many systems
+* Perform compression test on files in random order, to help promote meaningful results partway (don't get stuck for 30 minutes testing one extension)
+* For compression test, select files proportionally by size, selecting random stretches of data instead of biasing towards smaller files
+* Support multiple compression algorithms, allow for comparisons
 
 
 ### License / Third-party Code
